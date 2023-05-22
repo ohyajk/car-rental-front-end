@@ -14,6 +14,7 @@ const CarCard = ({ currentItems }) => {
       <div className="card-container">
         {currentItems
           && currentItems.map((item) => (
+            // eslint-disable-next-line jsx-a11y/click-events-have-key-events
             <div
               className="reservation-card"
               key={item.id}
