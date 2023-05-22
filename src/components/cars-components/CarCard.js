@@ -8,9 +8,7 @@ const CarCard = ({ currentItems }) => {
   const handleNavigate = (id) => {
     navigate(`/cars/${id}`);
   };
-  const handleClick = () => {
 
-  };
   return (
     <>
       <div className="card-container">
@@ -22,7 +20,6 @@ const CarCard = ({ currentItems }) => {
               role="button"
               tabIndex={0}
               onClick={() => handleNavigate(item.id)}
-              onKeyDown={handleClick}
             >
               <div className="image-container">
                 <img
